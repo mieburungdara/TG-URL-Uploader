@@ -7,10 +7,10 @@ class Config(object):
     TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "1837730176:AAF9G1fLgx8a8HNjwwYndX5q_s3UMKdZEjQ")
     # The Telegram API things
     APP_ID = int(os.environ.get("APP_ID", 6844151))
-    API_HASH = os.environ.get("API_HASH")
+    API_HASH = os.environ.get("API_HASH",'248750e3d573e2c26f48d0213b00a841')
     # Get these values from my.telegram.org
     # Array to store users who are authorized to use the bot
-    AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "").split())
+    AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "1765302947").split())
     # Banned Unwanted Members..
     BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "").split())
     # the download location, where the HTTP Server runs
